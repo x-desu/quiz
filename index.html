@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz app</title>
+    <link rel="stylesheet" href="quiz.css">
+    <script  src="quiz.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="question" id="quiz">
+            <div class="exe"><span class="dot">... </span> Quiz?<span id="quizNos" class="quizNos">1</span> <span class="total">total: 10</span></div>
+            <p id="question" >------------</p>
+            <ul class="input_box" class>
+                <li>
+                <input type="radio" name="answer" id="a">
+                <label for="a" id="a_text">Y</label>
+                </li>
+                <li>
+                <input type="radio" name="answer" id="b">
+                <label for="b" id="b_text">O</label>
+                </li>
+                <li>
+                <input type="radio" name="answer" id="c">
+                <label for="c" id="c_text">!</label>
+                </li>
+                <li>
+                <input type="radio" name="answer" id="d">
+                <label for="d" id="d_text">!</label>
+                </li>
+                </ul>
+                <button type="submit" class="submit" id="submit">Submit</button>
+            </div>
+            <q id="quote" class="quote"></q>
+            <div class="ansDiv" id="showAns"></div> 
+        </div>
+</body>
+</html>
