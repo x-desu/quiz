@@ -11,7 +11,7 @@ const options = {
 
 
     async function getData(){
-        const url1 = 'https://the-trivia-api.com/api/questions?limit=10'
+        const url1 = 'https://the-trivia-api.com/api/questions?categories=film_and_tv,food_and_drink,music,science&limit=10&region=IN&tags=marvel,dc,comics,video_games,the_internet,science,batman,cartoons,food,india,mcu,rap,religion,technology,young_adult'
         const url2 = 'https://animechan.vercel.app/api/random'
     
         const responses = await Promise.all([fetch(url1), fetch(url2)])
@@ -165,8 +165,6 @@ const showans = (data) => {
 
     console.log(data)
     const anscontainer = document.getElementById('showAns')
-    
-
     data.forEach((item,index) => {
         const divEL = document.createElement('div')
         divEL.classList.add('ansElement')
