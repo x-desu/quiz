@@ -68,7 +68,7 @@ function displayQuestion(data) {
 let quesAns = []
 
 function checkAnswer(data) {
-
+    
     let sumbit = document.getElementById('submit')
 sumbit.addEventListener('click', () => {
     const radio = document.querySelector('input[type=radio]:checked')
@@ -163,18 +163,20 @@ const createdivs = (data) => {
 
 const showans = (data) => {
 
-    console.log(data)
+    
     const anscontainer = document.getElementById('showAns')
+  
     data.forEach((item,index) => {
+        
         const divEL = document.createElement('div')
         divEL.classList.add('ansElement')
-        console.log(divEL)
+        
         const ques = document.createElement('p')
         ques.innerHTML = `Question ${index + 1}: ${item.question}`
         const Yourans = document.createElement('p')
         Yourans.innerHTML = `Your answer: ${item.Youranswer}`
         const ans = document.createElement('p')
-        ans.innerHTML = `Correct Answer: ${item.correctanswer}`
+        ans.innerHTML = `Correct Answer: ${item.correctAnswer}`
         const correct = document.createElement('p')
         if(item.correct) {
             correct.innerHTML = 'Correct'
