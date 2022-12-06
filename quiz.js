@@ -174,7 +174,7 @@ const showans = (data) => {
         const Yourans = document.createElement('p')
         Yourans.innerHTML = `Your answer: ${item.Youranswer}`
         const ans = document.createElement('p')
-        ans.innerHTML = `Correct Answer: ${item.correctanswer}`
+        ans.innerHTML = `Correct Answer: ${item.correctAnswer}`
         const correct = document.createElement('p')
         if(item.correct) {
             correct.innerHTML = 'Correct'
