@@ -23,7 +23,7 @@ const options = {
        const ans =  displayQuestion(data1)
         displayQuote(data2)
         checkAnswer(data1)
-        // do what you want with data1 and data2 here
+        // do what you want with data1 and data2 
     }
 
     getData()
